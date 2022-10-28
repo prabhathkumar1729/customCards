@@ -20,7 +20,7 @@ body {
   --blog-color: #f57f01;
   --dribbble-color: #ea4c88;
   --twitter-color: #1ca1f1;
-  /* margin: 20px; */
+
 }
 
 .main {
@@ -32,27 +32,18 @@ body {
   justify-content: flex-start;
   align-content: flex-start;
   align-items: center;
-  /* position: absolute; */
-  /* padding: 10px; */
 }
 
 .card {
-  height: 50%;
-  /* width: 195px; */
+  height:300px;
   margin: 25px;
   position: relative;
-  /* transition: width 0.5s, height 0.5s; */
   transition: transform 0.4s;
   width: calc(1 / 5 * 100% - (1 - 1 / 1) * 5%);
   background-color: white;
-  /* align-content: center;
-  align-items: center;
-  justify-content: center; */
 }
 
 .card:hover {
-  /* height: 280px;
-    width: 215px; */
   transform: scale(110%);
 }
 
@@ -76,17 +67,16 @@ body {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   position: relative;
-  /* padding-top: 50%; */
 }
 .card img {
   position: absolute;
   translate: 0 -50%;
   left: 50%;
-  /* left: 50%; */
   transform: translate(-50%, 0);
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  border: 2px solid white;
   z-index: 2;
 }
 
@@ -109,128 +99,13 @@ body {
 .socials {
   color: #b0b0b0;
   text-align: center;
-
   position: relative;
-  /* left: 50%; */
-  /* bottom: 5%; */
-
-  /* margin-bottom: 50px; */
 }
 
 .socials > span {
   margin: 0 4px;
   font-size: 10px;
 }
-
-/* #pinterest img {
-  filter: drop-shadow(1px 1px 5px #ffcdd3);
-} */
-
-/* #pinterest .card-top {
-  color: white;
-}
-
-#pinterest .content {
-  color: #cbcbcb;
-} */
-
-/* #pinterest,
-#facebook,
-#behance,
-#linkedin,
-#dribbble,
-#blogger {
-  background-color: white;
-} */
-
-/* #facebook img {
-  filter: drop-shadow(1px 1px 5px #e0eaff);
-}
-
-#facebook .card-top {
-  background-color: #3b599a;
-  color: white;
-} */
-
-/* #instagram img {
-  filter: drop-shadow(1px 1px 5px #ffb0dd);
-}
-
-#instagram .card-top {
-  color: #c13584;
-  background-color: white;
-}
-
-#instagram {
-  background-color: #c13584;
-  color: white;
-} */
-
-/* #instagram .socials,
-#instagram .name,
-#instagram .content {
-  color: white;
-} */
-
-/* #behance .card-top {
-  background-color: #1869ff;
-}
-
-#behance .card-top {
-  color: white;
-}
-
-#dribbble .card-top {
-  background-color: #ea4c88;
-  color: white;
-}
-
-#dribbble img {
-  filter: drop-shadow(1px 1px 5px #ffd4e5);
-}
-
-#behance img {
-  filter: drop-shadow(1px 1px 5px #dae6ff);
-}
-
-#twitter {
-  background-color: #1ca1f1;
-  color: #1ca1f1;
-}
-
-#twitter .card-top {
-  background-color: white;
-}
-
-#twitter .socials,
-#twitter .name,
-#twitter .content {
-  color: white;
-}
-
-#twitter img {
-  filter: drop-shadow(1px 1px 5px #bfe6ff);
-}
-
-#blogger .card-top {
-  background-color: #f57f01;
-  color: white;
-}
-
-#blogger img {
-  filter: drop-shadow(1px 1px 5px #fcead5);
-}
-
-#linkedin .card-top {
-  background-color: #0177b6;
-  color: white;
-}
-
-#linkedin img {
-  filter: drop-shadow(1px 1px 5px #e0f4ff);
-} */
-
-/* *********************************************** */
 
 .card_checkbox {
   position: absolute;
@@ -429,26 +304,26 @@ body {
 
 /* ******************************************************************************************************************** */
 
-#behance .card-top {
-  background-color: var(--behance-color);
+#blog .card-top {
+  background-color: var(--blog-color);
 }
 
-#behance .card_checkbox:checked ~ .card-bottom,
-#behance .card_checkbox:checked ~ .card-bottom .content,
-#behance .card_checkbox:checked ~ .card-bottom .name,
-#behance .card_checkbox:checked ~ .card-bottom .socials {
-  background-color: var(--behance-color);
+#blog .card_checkbox:checked ~ .card-bottom,
+#blog .card_checkbox:checked ~ .card-bottom .content,
+#blog .card_checkbox:checked ~ .card-bottom .name,
+#blog .card_checkbox:checked ~ .card-bottom .socials {
+  background-color: var(--blog-color);
   color: white;
 }
-#behance .card_checkbox:checked ~ .card-top,
-#behance .card_checkbox:checked ~ .card-top .social-icon {
+#blog .card_checkbox:checked ~ .card-top,
+#blog .card_checkbox:checked ~ .card-top .social-icon {
   background-color: white;
-  color: var(--behance-color);
+  color: var(--blog-color);
 }
 
-#behance .card_checkbox:checked ~ .card-top .check-box .pin-checked {
+#blog .card_checkbox:checked ~ .card-top .check-box .pin-checked {
   display: inline-block;
 }
-#behance .card_checkbox:checked ~ .card-top .check-box .pin-unchecked {
+#blog .card_checkbox:checked ~ .card-top .check-box .pin-unchecked {
   display: none;
 }
